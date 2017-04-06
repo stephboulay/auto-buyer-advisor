@@ -3,4 +3,193 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "compass";
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+.contact-form {
+	label {
+		display: none;
+	}
+	input {
+		display: block;
+		padding: 10px 20px 10px 20px;
+		width: 100%;
+		border: none;
+		margin: 5px 0;
+	}
+	.sendButton {
+		font-size: 30px;
+		padding: 10px 55px;
+		background-color: #002164; 
+		@include filter-gradient(#002164, #007cbc, vertical); 
+		@include background-image(linear-gradient(top,  #002164 0%,#007cbc 100%));
+		color: white;
+		border-radius: 6px 6px;
+		border: none;
+		margin: 20px;
+	}
+}
+section {
+	position: relative;
+	overflow: hidden;
+}
+.image-bg{
+		position: absolute;
+    	top: 0;
+    	bottom: 0;
+    	right: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    	transform: skewY(6deg);
+  		transform-origin: top right;
+		
+	}
+.cta {
+	text-align: center;
+	z-index: 100;
+	form {
+		width: 40%;
+		padding: 10%;
+		position: relative;
+	}
+	input {
+		font-size: 20px;
+	}
+	h1 {
+		font-weight: normal;
+	}
+	.call {
+		font-family: times new roman;
+		font-size: 20px;
+		color: gray;
+		font-style: italic;
+	}
+	.phone a {
+		text-decoration: none;
+		color: black;
+		font-size: 28px;
+		font-weight: bold;
+
+	}
+	.cta-bg {
+		background: url(../images/keys.jpg);
+		background-size: cover;
+	}
+}
+.translucentBox {
+  	margin: 50px 50px 150px;
+  	padding: 40px;
+  	background-color: rgba(0,0,0,.5);
+  	border-radius: 20px 20px;
+	overflow: hidden;
+	z-index: 10;
+    position: relative;
+}
+
+.description {
+	z-index: 90;
+	overflow:hidden;
+	color: white;
+    margin-top: -20%;
+    padding-top: 20%;
+}
+
+.description-bg {
+	background: url(../images/open-road.jpg);
+	background-size: cover;
+}
+
+.mainDescription {
+	float: left;
+	width: 50%;
+	padding: 30px;
+			h2 { 
+  	font-size: 4em;
+  	font-weight: 800;
+  	color: white;
+		}
+}
+
+.secondDescription {
+	padding: 90px 5px;
+	ul {
+		list-style: none;
+	}
+	li {
+		margin-bottom: 25px;
+	}
+}
+
+.price {
+	text-align: center;
+	overflow: hidden;
+	z-index: 80;
+	background: url(../images/driver.jpg);
+	background-size: cover;
+	margin-top: -20%;
+    padding-top: 20%;
+	h3 {
+		color: white;		
+    	margin: 0;
+    	padding: 150px 0 0;
+    	font-size: 25px;
+	}
+	color: black;
+	li {
+		border-right: 1px solid gray;
+		min-height: 140px;
+		float: left;
+		padding:50px;
+		&:last-child{
+			border: none;
+		}
+	}
+	.cost {
+		font-size: 70px;
+	}
+	.type {
+		font-size: 20px;
+		color: gray;
+	}
+	.carValue {
+		font-size: 10px;
+		color: gray;
+	}
+	.whiteBox {
+		list-style: none;
+		margin: 60px 40px 300px 40px;
+  		padding: 40px;
+  		background-color: rgba(255,255,255,.8);
+  		border: 1px solid white;
+  		box-shadow: 0px 0px 5px rgba(0,0,0,.7);
+  		border-radius: 20px 20px;
+		overflow: hidden;
+
+	}
+	.footer {
+		text-align: center;
+	}
+}
+.returnHomeButton {
+	font-size: 25px;
+	padding: 10px 55px;
+	background-color: #002164; 
+	@include filter-gradient(#002164, #007cbc, vertical); 
+	@include background-image(linear-gradient(top,  #002164 0%,#007cbc 100%));
+	color: white;
+	border-radius: 6px 6px;
+	border: none;
+	margin: 20px;
+	text-decoration: none;
+	}
+
+
+
+
+
